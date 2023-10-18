@@ -1,25 +1,32 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #dba2ec;
-    margin: 5%;
-    padding: 0;
     color: #251523;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 800px;
+     
     margin: 0 auto;
+    position: relative;
     background-color: #FFC0CB;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .logo {
     width: 13%;
-    display: inline;
-    margin: 0;
+    margin-top: 4%;
+    margin-left: 9%;
+    transition: transform 0.3s ease;
 }
+
 h1 {
-    color: #53405e;
+    color: #2f143f;
+    padding-left: 22%;
+    padding-right: 22%;
+    text-align: center;
 }
 
 h2 {
@@ -31,15 +38,16 @@ div {
     color: #333;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 10px;
-    width: 30%;
-    margin: 5px; 
+    padding: 2%;
+    position: relative;
+    width: 27%;
+    margin: 1%; 
     display: inline-block;
     vertical-align: top;
     transition: transform 0.3s ease;
 }
 
-div:hover {
+div:hover, p:hover, .nav li:hover, .logo:hover, button:hover, hr:hover {
     transform: translateY(-5px); /* Slide up 5 pixels on hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
 }
@@ -48,28 +56,39 @@ div:hover {
 .nav {   
      
     display: inline;
-    margin-left: 65%;
+    margin-left: 45%; 
+    margin-top: 5%;
+
 
 }
-button {
-    display: inline-block;
-    padding: 5px;
-    margin-left: 45%;
-    left: 20%; 
-    color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.1);
-}
+
 
 .nav li {
     display: inline-block;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 22px;
     background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+    transition: transform 0.3s ease;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
+}
+
+button {     
+    margin-bottom: 2%; 
+    margin-top: 1%; 
+    margin-left: 25%; 
+    width: 50%;   
+    height: 60px;  
+    color: #333;
+    border-radius: 22px;
+    box-shadow: 4px 4px 8px rgba(46, 8, 68, 0.2);
+    transition: transform 0.3s ease;
+     
 }
 
 
@@ -79,7 +98,8 @@ button {
 
 .icon {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+    height: 5%;
     text-decoration: none;
     color: #A020F0;
 }
@@ -88,12 +108,23 @@ button {
     color: #FF1493;
 }
 
-.image {
-width: 100%;
-align-self: center;
-top: 0px;
+hr { border-radius: 2px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: rgba(68, 8, 124, 0.1);
+    transition: transform 0.3s ease;
 }
 
-hr { border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.1);
+
+img {
+    width: 100%;
+  }
+  
+p   {
+    padding-left: 12%;
+    padding-right: 12%;     
+text-align: center;
+position: relative;
+ 
+
 }
