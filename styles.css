@@ -125,6 +125,14 @@ p   {
     padding-right: 12%;     
 text-align: center;
 position: relative;
+transition: transform 2s ease;
+
+}
+h3 {
+    padding-left: 12%;
+    padding-right: 12%;     
+text-align: center;
+position: relative; ;
  
 
 }
