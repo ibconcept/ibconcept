@@ -8,13 +8,14 @@ body {
 }
 
 .container {
-     
+
     margin: 0 auto;
     position: relative;
     background-color: #FFC0CB;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
     width: 13%;
     margin-top: 4%;
@@ -31,7 +32,7 @@ h1 {
 
 h2 {
     color: #7a15b9;
-     
+
 }
 
 div {
@@ -41,22 +42,29 @@ div {
     padding: 2%;
     position: relative;
     width: 27%;
-    margin: 1%; 
+    margin: 1%;
     display: inline-block;
     vertical-align: top;
     transition: transform 0.3s ease;
 }
 
-div:hover, p:hover, .nav li:hover, .logo:hover, button:hover, hr:hover {
-    transform: translateY(-5px); /* Slide up 5 pixels on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+div:hover,
+p:hover,
+.nav li:hover,
+.logo:hover,
+button:hover,
+hr:hover {
+    transform: translateY(-5px);
+    /* Slide up 5 pixels on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow for depth */
 }
 
 
-.nav {   
-     
+.nav {
+
     display: inline;
-    margin-left: 45%; 
+    margin-left: 45%;
     margin-top: 5%;
 
 
@@ -78,17 +86,17 @@ div:hover, p:hover, .nav li:hover, .logo:hover, button:hover, hr:hover {
     color: white;
 }
 
-button {     
-    margin-bottom: 2%; 
-    margin-top: 1%; 
-    margin-left: 25%; 
-    width: 50%;   
-    height: 60px;  
+button {
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 25%;
+    width: 50%;
+    height: 60px;
     color: #333;
     border-radius: 22px;
     box-shadow: 4px 4px 8px rgba(46, 8, 68, 0.2);
     transition: transform 0.3s ease;
-     
+
 }
 
 
@@ -108,7 +116,8 @@ button {
     color: #FF1493;
 }
 
-hr { border-radius: 2px;
+hr {
+    border-radius: 2px;
     margin-right: 10%;
     margin-left: 10%;
     background-color: rgba(68, 8, 124, 0.1);
@@ -118,21 +127,23 @@ hr { border-radius: 2px;
 
 img {
     width: 100%;
-  }
-  
-p   {
+}
+
+p {
     padding-left: 12%;
-    padding-right: 12%;     
-text-align: center;
-position: relative;
-transition: transform 2s ease;
+    padding-right: 12%;
+    text-align: center;
+    position: relative;
+    transition: transform 2s ease;
 
 }
+
 h3 {
     padding-left: 12%;
-    padding-right: 12%;     
-text-align: center;
-position: relative; ;
- 
+    padding-right: 12%;
+    text-align: center;
+    position: relative;
+    ;
+
 
 }
