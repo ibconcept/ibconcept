@@ -24,11 +24,19 @@ body {
 }
 iframe {
     display: inline-block;
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     height: 300px;
+    max-width: 100%;
     
 }
+
+figure {
+
+display: inline-block
+
+}
+
 h1 {
     color: #2f143f;
     padding-left: 22%;
