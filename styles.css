@@ -1,19 +1,10 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #dba2ec;
+    background-color: rgb(236, 208, 245);
     color: #251523;
     width: auto;
     margin: 0;
     padding: 0;
-}
-
-.container {
-
-    margin: 0 auto;
-    position: relative;
-    background-color: #FFC0CB;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -22,20 +13,23 @@ body {
     margin-left: 9%;
     transition: transform 0.3s ease;
 }
+
+figure {
+text-align: center;
+display: inline-block;
+
+}
+
+
 iframe {
     display: inline-block;
     margin-left: 5%;
     width: 90%;
     height: 300px;
     max-width: 100%;
-    
-}
-
-figure {
-
-display: inline-block
 
 }
+ 
 
 h1 {
     color: #2f143f;
@@ -60,6 +54,7 @@ div {
     position: relative;
     width: 27%;
     margin: 1%;
+    text-align: center;
     display: inline-block;
     vertical-align: top;
     transition: transform 0.3s ease;
