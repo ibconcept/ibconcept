@@ -5,6 +5,7 @@ body {
     width: auto;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .logo {
@@ -15,8 +16,9 @@ body {
 }
 
 figure {
-text-align: center;
-display: inline-block;
+    text-align: center;
+    align-items: center;  
+    display: inline-block;
 
 }
 
@@ -29,7 +31,7 @@ iframe {
     max-width: 100%;
 
 }
- 
+
 
 h1 {
     color: #2f143f;
@@ -59,6 +61,7 @@ div {
     vertical-align: top;
     transition: transform 0.3s ease;
 }
+
 
 div:hover,
 p:hover,
