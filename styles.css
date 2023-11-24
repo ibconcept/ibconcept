@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-    color: #7a15b9;
+    color: #746380;
     padding-left: 22%;
     padding-right: 22%;
     text-align: center;
@@ -102,16 +102,14 @@ hr:hover {
     color: white;
 }
 
-button {
-    margin-bottom: 2%;
-    margin-top: 1%;
-    margin-left: 25%;
-    width: 50%;
-    height: 60px;
-    color: #333;
+button { 
+    height: 40px;
+    color: #4a3f5f;
     border-radius: 22px;
     box-shadow: 4px 4px 8px rgba(46, 8, 68, 0.2);
     transition: transform 0.3s ease;
+    width: 50%;
+    display: inline-block;
 
 }
 
@@ -125,7 +123,7 @@ button {
     margin-right: 20px;
     height: 5%;
     text-decoration: none;
-    color: #A020F0;
+    color: #3a1a4e;
 }
 
 .icon:hover {
