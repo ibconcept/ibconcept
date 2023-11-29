@@ -8,10 +8,20 @@ body {
     text-align: center;
 }
 
-.logo {
-    width: 100px;
+.nav {
+
+    display: inline;
+    margin-left: 20%;
     margin-top: 4%;
-    margin-left: 10%;
+    max-width: 100%;
+
+
+}
+
+.logo {
+    width: 13%;
+    margin-top: 6%;
+    margin-left: 8%;
     transition: transform 0.3s ease;
 }
 
@@ -26,6 +36,7 @@ figure {
 iframe {
     display: inline-block;
     margin-left: 5%;
+
     width: 90%;
     height: 300px;
     max-width: 100%;
@@ -77,15 +88,6 @@ hr:hover {
 }
 
 
-.nav {
-
-    display: inline;
-    margin-left: 30%;
-    margin-top: 5%;
-    max-width: 100%;
-
-
-}
 
 
 .nav li {
