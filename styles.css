@@ -25,6 +25,14 @@ body {
     transition: transform 0.3s ease;
 }
 
+.image-gallery {   
+    width: 20%;  
+    margin: 2%;
+    display: inline-block;
+    position: relative;
+
+    
+}
 figure {
     text-align: center;
     align-items: center;  
