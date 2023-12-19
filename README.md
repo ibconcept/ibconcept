@@ -1,4 +1,4 @@
-# ibconcept.co.ke Repository
+# ibconcept 
 
 Welcome to the Git repository for ibconcept.co.ke, a design agency specializing in web development, visual design, printing, branding strategy, brand consultancy, and promotional items printing.
 
