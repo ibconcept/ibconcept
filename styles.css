@@ -106,7 +106,7 @@ hr:hover {
     display: inline-block;
     padding: 5px;
     border-radius: 22px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 5%;
     transition: transform 0.3s ease;
@@ -207,6 +207,22 @@ h3 {
     }
   }
  
+  .article {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    transition: height 0.3s ease;
+    cursor: pointer;
+  }
+  .article:hover {
+    background-color: #f9f9f9;
+  }
+  .article h2 {
+    margin-top: 0;
+  }
+  .full-content {
+    height: auto;
+    overflow: hidden;
+  }
 
 
  
