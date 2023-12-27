@@ -1,7 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(236, 208, 245);
-    color: #514272;
+    color: blueviolet;
     width: auto;
     margin: 0;
     padding: 0;
@@ -11,11 +11,8 @@ body {
 .nav {
 
     display: inline;
-    margin-left: 20%;
-    margin-top: 4%;
-    max-width: 100%;
-
-
+    margin-left: 10%;
+    margin-top: 5%;  
 }
 
 .logo {
@@ -172,4 +169,35 @@ h3 {
 
 
 }
+/* Media query for phones (adjust the max-width as needed) */
+@media (max-width: 767px) {
+    nav {
+      display: flex;
+      flex-wrap: nowrap; /* Ensures the items stay in one line */
+      justify-content: flex-start; /* Align items to the left */
+      margin-left: 0;
+      margin-top: 0; /* Adjust margin as needed */
+    }
+    .logo{
+
+        width: 30vw;
+        margin-top: 15vw;
+    }
+    @media screen and (max-width: 768px) {
+        div {
+            width: 80%;
+            font-size: 12px;
+            margin: 1% auto;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+  }
+ 
+
+
  
