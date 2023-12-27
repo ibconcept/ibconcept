@@ -19,7 +19,7 @@ body {
 .logo {
     width: 13%;
     margin-top: 6%;
-    margin-left: 1%;
+    margin-left: 8%;
     transition: transform 0.3s ease;
 }
 video{ 
@@ -186,12 +186,6 @@ h3 {
       margin-left: 0;
       margin-top: 0; /* Adjust margin as needed */
     }
-    .logo{
-
-        width: 30vw;
-        margin-top: 15vw;
-        margin-left: 21%;
-    }
     @media screen and (max-width: 768px) {
         div {
             width: 80%;
@@ -204,6 +198,12 @@ h3 {
             flex-wrap: wrap;
             justify-content: space-around;
         }
+    }
+    
+    .logo{
+
+        width: 30vw;
+        margin-top: 15vw;
     }
   }
  
