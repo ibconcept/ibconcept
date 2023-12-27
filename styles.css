@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden; 
 }
 
 .nav {
@@ -21,7 +22,13 @@ body {
     margin-left: 8%;
     transition: transform 0.3s ease;
 }
+video{ 
+    height: auto;
+    width: 80vw ;
 
+
+
+}
 .image-gallery {   
     width: 20%;  
     margin: 2%;
@@ -57,7 +64,7 @@ h1 {
 }
 
 h2 {
-    color: #746380;
+    color: #2f143f;
     padding-left: 22%;
     padding-right: 22%;
     text-align: center;
@@ -65,7 +72,7 @@ h2 {
 }
 
 div {
-    color: #333;
+   
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 2%;
@@ -157,6 +164,7 @@ p {
     text-align: center;
     position: relative;
     transition: transform 2s ease;
+    color: blueviolet;
 
 }
 
