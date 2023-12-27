@@ -188,23 +188,26 @@ h3 {
     }
     @media screen and (max-width: 768px) {
         div {
-            width: 80%;
+            width: 80vw;
             font-size: 12px;
-            margin: 1% auto;
+            margin: 2%;
+            position: relative;
         }
         
         .container {
+            width: 90vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+        .logo{
+
+            width: 30vw;
+            margin-top: 15vw;
+        }
     }
     
-    .logo{
-
-        width: 30vw;
-        margin-top: 15vw;
-    }
+ 
   }
  
   .article {
