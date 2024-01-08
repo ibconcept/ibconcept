@@ -9,32 +9,32 @@ body {
     overflow-x: hidden; 
 }
 
-
 header {
-    margin: 0; 
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: morph 10s ease-in-out infinite; 
+    animation: morph 10s linear infinite;
   }
-
+  
   @keyframes morph {
     0% {
-      background: radial-gradient(circle at top left, rgb(236, 208, 245), #6200b3ff);
+      background: radial-gradient(circle at top left, rgb(236, 208, 245), rgb(252, 144, 153));
     }
     25% {
-      background: radial-gradient(circle at top left, #6200b3ff, #3b0086ff);
+      background: radial-gradient(circle at top left, rgb(255, 156, 247), rgb(187, 245, 255));
     }
     50% {
-      background: radial-gradient(circle at top left, #3b0086ff, #dc758fff);
+      background: radial-gradient(circle at top left, rgb(193, 154, 245), #dc758fff);
     }
     75% {
-      background: radial-gradient(circle at top left, #dc758fff, #290628ff);
+      background: radial-gradient(circle at top left, rgb(253, 201, 214), rgb(224, 135, 221));
     }
     100% {
-      background: radial-gradient(circle at top left, #290628ff, rgb(236, 208, 245));
+      background: radial-gradient(circle at top left, rgb(250, 72, 140), rgb(236, 208, 245));
     }
   }
+  
 
 .nav {
    
