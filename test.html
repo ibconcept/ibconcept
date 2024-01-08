@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Morphing Gradient Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: morph 10s ease-in-out infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes morph {
+      0% {
+        background: radial-gradient(circle at top left, rgb(236, 208, 245), #6200b3ff);
+      }
+      25% {
+        background: radial-gradient(circle at top left, #6200b3ff, #3b0086ff);
+      }
+      50% {
+        background: radial-gradient(circle at top left, #3b0086ff, #dc758fff);
+      }
+      75% {
+        background: radial-gradient(circle at top left, #dc758fff, #290628ff);
+      }
+      100% {
+        background: radial-gradient(circle at top left, #290628ff, rgb(236, 208, 245));
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your content goes here -->
+</body>
+</html>

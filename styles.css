@@ -9,8 +9,35 @@ body {
     overflow-x: hidden; 
 }
 
-.nav {
 
+header {
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: morph 10s ease-in-out infinite; 
+  }
+
+  @keyframes morph {
+    0% {
+      background: radial-gradient(circle at top left, rgb(236, 208, 245), #6200b3ff);
+    }
+    25% {
+      background: radial-gradient(circle at top left, #6200b3ff, #3b0086ff);
+    }
+    50% {
+      background: radial-gradient(circle at top left, #3b0086ff, #dc758fff);
+    }
+    75% {
+      background: radial-gradient(circle at top left, #dc758fff, #290628ff);
+    }
+    100% {
+      background: radial-gradient(circle at top left, #290628ff, rgb(236, 208, 245));
+    }
+  }
+
+.nav {
+   
     display: inline;
     margin-left: 10%;
     margin-top: 5%;  
