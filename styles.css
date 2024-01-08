@@ -1,7 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(236, 208, 245);
-    color: blueviolet;
+    color:#4a3f5f
     width: auto;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: morph 20s cubic-bezier(0.32, 0, 0.58, 1) infinite;
+    animation: morph 10s cubic-bezier(0.32, 0, 0.58, 1) infinite;
 }
 
 @keyframes morph {
@@ -167,8 +167,7 @@ button {
     display: inline-block;
     margin-right: 20px;
     height: 5%;
-    text-decoration: none;
-    color: #3a1a4e;
+    text-decoration: none; 
 }
 
 .icon:hover {
@@ -194,7 +193,7 @@ p {
     text-align: center;
     position: relative;
     transition: transform 2s ease;
-    color: blueviolet;
+    color:#4a3f5f;
 
 }
 
