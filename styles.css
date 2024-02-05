@@ -78,7 +78,6 @@ figure {
 iframe {
     display: inline-block;
     margin-left: 5%;
-
     width: 90%;
     height: 300px;
     max-width: 100%;
@@ -104,7 +103,7 @@ h2 {
 main div {
    
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 2%;
     position: relative;
     width: 27%;
@@ -219,10 +218,15 @@ h3 {
         div {
             width: 80vw;
             font-size: 12px;
-            margin: 2%;
-            position: relative;
+            margin: 2%; 
         }
-        
+        main div {
+   
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 15px; 
+            width: 87%;
+
+        }
         .container {
             width: 90vw;
             display: flex;
