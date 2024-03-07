@@ -17,6 +17,8 @@ header {
     justify-content: center;
     align-items: center;
     animation: morph 10s cubic-bezier(0.32, 0, 0.58, 1) infinite;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 5px;
 }
 
 @keyframes morph {
@@ -52,6 +54,8 @@ header {
     margin-left: 8%;
     transition: transform 0.3s ease;
 }
+
+
 video{ 
     height: auto;
     width: 80vw ;
