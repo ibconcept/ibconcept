@@ -1,8 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(236, 208, 245);
-    color:#4a3f5f
-    width: auto;
+    color:#4a3f5f ;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,7 +11,7 @@ body {
 
 
 header {
-    margin: 0;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
