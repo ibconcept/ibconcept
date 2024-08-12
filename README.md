@@ -1,9 +1,27 @@
 # ibconcept 
 
-Welcome to the Git repository for ibconcept.co.ke, a design agency specializing in web development, visual design, printing, branding strategy, brand consultancy, and promotional items printing.
+Welcome to the Git repository for ibconcept.xyz, a design agency specializing in web development, visual design, printing, branding strategy, brand consultancy, and promotional items printing.
+
+## Hi there! 👋
+
+### GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ibconcept&show_icons=true&hide_title=true&count_private=true&hide=prs)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ibconcept)
+
+### Stack Overflow
+[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-Profile-yellow)](https://stackoverflow.com/users/ibconcept)
+
+---
+
+Feel free to explore my projects and reach out to me!
+
+- [GitHub](https://github.com/ibconcept)
+- [LinkedIn](https://www.linkedin.com/in/williammaina)
+- [Website](https://ibconcept.xyz)
+
 
 ## About ibconcept.xyz
-ibconcept.co.ke is a dynamic design agency committed to helping businesses and organizations establish a strong visual presence, communicate their brand effectively, and drive success through design and marketing.
+ibconcept.xyz is a dynamic design agency committed to helping businesses and organizations establish a strong visual presence, communicate their brand effectively, and drive success through design and marketing.
 
 ### Our Services
 
@@ -35,9 +53,9 @@ This repository contains resources and files related to our projects, code, and 
 
 ## Getting Started
 
-If you're part of our team or working on projects related to ibconcept.co.ke, here's how to get started with this repository:
+If you're part of our team or working on projects related to ibconcept.xyz, here's how to get started with this repository:
 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/ibconcept/ibconcept.co.ke.git
+   git clone https://github.com/ibconcept/ibconcept.xyz.git
