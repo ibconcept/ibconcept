@@ -9,7 +9,7 @@ Welcome to the Git repository for ibconcept.xyz, a design agency specializing in
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ibconcept)
 
 ### Stack Overflow
-[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-Profile-yellow)](https://stackoverflow.com/users/ibconcept)
+[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-Profile-yellow)](https://stackoverflow.com/users/26789233/ibconcept)
 
 ---
 
