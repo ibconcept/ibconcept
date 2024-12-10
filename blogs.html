@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="William Maina">
+<meta name="description" content="IBConcept Design Agency - Unlocking your online potential with web/app design, branding, and visual storytelling to transform African businesses.">
+<meta name="keywords" content="IBConcept, William Maina, web design, app development, branding, printing, digital transformation, design agency">
+<meta name="robots" content="index, follow">
+
+<!-- Social Media Sharing -->
+<meta property="og:title" content="IBConcept Design Agency - Transforming Businesses Digitally">
+<meta property="og:description" content="Unlock your brand's potential with IBConcept - Web design, app development, and branding for global impact.">
+<meta property="og:image" content="https://ibconcept.vip/images/social-preview.jpg">
+<meta property="og:url" content="https://ibconcept.vip">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBConcept Design Agency - Digital Transformation">
+<meta name="twitter:description" content="IBConcept specializes in web design, app development, branding, and visual storytelling.">
+<meta name="twitter:image" content="https://ibconcept.vip/images/social-preview.jpg">
+
+<!-- SEO Optimization -->
+<meta name="application-name" content="IBConcept Design Agency">
+<meta name="theme-color" content="#581042">
+<meta name="msapplication-navbutton-color" content="#581042">
+<meta name="apple-mobile-web-app-status-bar-style" content="#581042">
+<meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE">
+
+<!-- Additional Meta Tags -->
+<meta property="og:site_name" content="IBConcept Design Agency">
+<meta name="rating" content="General">
+<meta name="subject" content="Web Design and Branding">
+<meta name="reply-to" content="info@ibconcept.vip">
+<meta name="distribution" content="global">
+<meta name="copyright" content="© IBConcept Design Agency 2024">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibconcept Blogs</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav {
+            
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .side-panel {
+            background-color: #f5f5f5;
+            width: 20%;
+            height: 100vh;
+            padding: 1rem;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+        }
+        .content-area {
+            width: 80%;
+            padding: 2rem;
+        }
+        .side-panel h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .side-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+        .side-panel ul li {
+            margin-bottom: 10px;
+        }
+        .side-panel ul li a {
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+        .side-panel ul li a:hover {
+            color: #007BFF;
+        }
+        .article {
+            display: none;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        .article.active {
+            display: block;
+        }
+        .article h2 {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .article h2:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-panel">
+        <a href="index.html"><img src="logo.PNG" alt="ib logo" class="logo"></a> 
+        <h3> ib Blog </h3>
+        <ul>
+            <li><a href="#" onclick="showBlog(0)">Intro to Modern Brand Concept</a></li>
+            <li><a href="#" onclick="showBlog(1)">Key Considerations on Web Development</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="content-area">
+        <p>select blog from side powerful content curated from our team .</p>
+
+        <div class="article">
+            <h2 onclick="toggleBlog(this)">Intro to Modern Brand Concept</h2>
+            <div class="full-content">
+                <p>In today's business landscape, the modern brand concept transcends...</p>
+                <!-- Full content omitted for brevity -->
+            </div>
+        </div>
+
+        <div class="article">
+            <h2 onclick="toggleBlog(this)">Key Considerations on Web Development</h2>
+            <div class="full-content">
+                <p>In today’s digital landscape, a website is the cornerstone...</p>
+                <!-- Full content omitted for brevity -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle visibility of a specific blog
+        function toggleBlog(titleElement) {
+            const parentArticle = titleElement.closest('.article');
+            const allArticles = document.querySelectorAll('.article');
+
+            allArticles.forEach(article => {
+                if (article === parentArticle) {
+                    article.classList.toggle('active');
+                } else {
+                    article.classList.remove('active');
+                }
+            });
+        }
+
+        // Function to show a specific blog based on index
+        function showBlog(index) {
+            const allArticles = document.querySelectorAll('.article');
+            allArticles.forEach((article, i) => {
+                if (i === index) {
+                    article.classList.add('active');
+                } else {
+                    article.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
