@@ -168,15 +168,7 @@ main div {
     transition: transform 0.3s ease;
 }
 
-div:hover,
-p:hover,
-.nav li:hover,
-.logo:hover,
-button:hover,
-hr:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 .nav li {
     display: inline-block;
@@ -288,18 +280,6 @@ footer {
         margin-top: 15vw;
     }
 }
-=======
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(236, 208, 245);
-    color:#4a3f5f ;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow-x: hidden; 
-}
-
-
 
 header {
     margin: 0px;
@@ -409,13 +389,9 @@ main div {
 }
 
 
-
-div:hover,
-p:hover,
+ 
 .nav li:hover,
-.logo:hover,
-button:hover,
-hr:hover {
+button:hover {
     transform: translateY(-5px);
     /* Slide up 5 pixels on hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -483,8 +459,7 @@ img {
 p {
     padding-left: 12%;
     padding-right: 12%;
-    text-align: center;
-    position: relative;
+        position: relative;
     transition: transform 2s ease;
     color:#4a3f5f;
 
@@ -499,31 +474,15 @@ h3 {
 
 
 }
-  }
- 
-  .article {
-    border-bottom: 1px solid #ccc;
-    padding: 5px;
-    transition: height 0.3s ease;
-    cursor: pointer;
-  }
-  .article:hover {
-    background-color: #f9f9f9;
-  }
-  .article h2 {
-    margin-top: 0;
-  }
-  .full-content {
-    height: auto;
-    overflow: hidden;
-  }
+  
 
 
   footer {
     background: radial-gradient(circle at 20% 0%, rgb(255, 156, 247), rgb(187, 245, 255));
     color: white;
         padding: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
+        bottom: 0;
 
 }
  
