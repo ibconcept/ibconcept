@@ -37,38 +37,49 @@ body {
     color: var(--color-secondary);
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-links li a {
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 1em;
+    /* color: aliceblue; */
     font-size: 16px;
     border-radius: 3px;
-    padding: 1em;
+    /* text-align: center; */
+    /* padding: 1em; */
     transition: color 0.3s ease-in-out;
+    border-bottom: 1px solid #FF1493;  /* Correct border syntax */
 }
-
 .nav-links li a:hover {
     color: #FF1493;
     background-color: #2f143f;
 }
 
+p{
+    max-width:  80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .hamburger {
     display: none;
-    background-color: #2f143f;
+   
     cursor: pointer;
 }
 
 .hamburger .material-icons {
-    font-size: 36px;
-    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    
 }
 
 video, img , button {
@@ -148,10 +159,6 @@ main div {
     transition: transform 0.3s ease;
 }
 
-.nav a {
-    text-decoration: none;
-    color: white;
-}
 
 button {
     height: 40px;
@@ -207,13 +214,15 @@ footer {
 }
 
 
-
 .logo {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
     border-radius: initial;
-    height: auto;
-    margin: 1em;
     width: 13%;
+    margin-right: 0vw;
 }
+
 
 .footer-section {
     flex: 1;
@@ -308,10 +317,16 @@ caption {
 }
 
 @media screen and (max-width: 768px) {
+    .navbar{
+
+        background-color:initial;
+    }
+
     .nav-links {
         flex-direction: column;
         gap: 10px;
         background-color: #581042;
+        color: aliceblue;
         position: absolute;
         top: 70px;
         right: 20px;
@@ -319,20 +334,37 @@ caption {
         display: none;
         border-radius: 8px;
         padding: 10px 0;
+        
     }
+
+
+    .nav-links li a {
+color: aliceblue;
+    }
+
 
     .nav-links.active {
         display: flex;
+        color: aliceblue;
+text-align: left;
+margin: 3px;
+margin-top: 36px;
     }
 
     .hamburger {
-        display: block;
+        display: flex;
+        position: absolute;
+        margin-left: 70vw;
     }
 
     div {
         width: 80vw;
         font-size: 12px;
         margin: 2%;
+    }
+
+    h1 {
+        font-size: medium;
     }
 
     main div {
@@ -349,7 +381,9 @@ caption {
     }
 
     .logo {
+        position: initial;
         width: 30vw;
-        margin-top: 15vw;
+        margin-top: 5vw;
+        margin-right: 50vw;
     }
 }
