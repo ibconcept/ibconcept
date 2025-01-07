@@ -19,6 +19,12 @@
 a {
     text-decoration: none;
 }
+
+
+li {
+    list-style-type: none;
+}
+
 body {
     font-family: "Montserrat", "Open Sans", "Roboto", sans-serif;
     background-color: var(--color-primary);
@@ -29,6 +35,12 @@ body {
     text-align: center;
     overflow-x: hidden;
 }
+
+html, body {
+    overflow-x: hidden;
+  }
+  
+
 
 .navbar {
     display: flex;
@@ -158,6 +170,9 @@ main div {
     margin-bottom: 5%;
     transition: transform 0.3s ease;
 }
+
+
+
 
 
 button {
