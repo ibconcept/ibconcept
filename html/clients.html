@@ -33,7 +33,7 @@
     <header>
 		<nav class="navbar">
 
-			<a href="../html/client       s.html">
+			<a href="../index.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo" class="logo">
 			</a>
 			<!-- Hamburger Icon -->
@@ -51,12 +51,7 @@
 
 			</ul>
 
-
-		</nav>
-
-
-
-
+	</nav>
 	</header>
 
 <main>
@@ -167,6 +162,20 @@
     <hr>
     <p>&copy; 2024 IBConcept Design Agency. All rights reserved.</p>
 </footer>
+
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+
+
+
 
 </body>
 </html>

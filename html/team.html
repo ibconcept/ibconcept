@@ -74,9 +74,10 @@
 
 <body>
 
+
   <header>
 		<nav class="navbar">
-			<a href="../html/clients.html">
+			<a href="../html/projects.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo" class="logo">
 			</a>
 			<div class="hamburger">
@@ -92,6 +93,7 @@
 			</ul>
 		</nav>
 	</header>
+
 
   <main>
     <h1>Join the IBConcept Team</h1>
@@ -122,6 +124,19 @@
   <footer>
     <p>&copy; 2024 IBConcept Design Agency | All Rights Reserved</p>
   </footer>
+
+
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const navLinks = document.querySelector('.nav-links');
+
+		hamburger.addEventListener('click', () => {
+			navLinks.classList.toggle('active');
+		});
+	</script>
+
+
+
 
 </body>
 

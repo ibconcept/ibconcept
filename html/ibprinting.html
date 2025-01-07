@@ -76,6 +76,8 @@
     <meta property="og:type" content="website">
 
    <title>IB Printing</title>
+
+
 <style>
 .print-categories-list {
     display: flex;
@@ -117,6 +119,44 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    .print-category-card {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        
+    }
+
+    .image-gallery {
+        width: 80vw;
+        padding: 8px;
+        
+        margin: 0 auto;
+
+    }
+
+    .print-categories-list {
+        display: block;
+        gap: 10px;
+        margin: 0 auto;
+
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .print-category-card {
+        width: 30%;
+    }
+
+    .print-categories-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
 </style>
 
 
@@ -124,30 +164,29 @@
 
 
 <body>
+ 
+    
+
+
     <header>
-        <nav class="navbar">
+		<nav class="navbar">
+			<a href="../html/projects.html">
+				<img src="/png/logo.PNG" alt="IBConcept Logo" class="logo">
+			</a>
+			<div class="hamburger">
+				<span class="material-icons">☰</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="../html/clients.html">Clients</a></li>
+				<li><a href="../html/blogs.html">Blog</a></li>
+				<li><a href="../html/team.html">Team</a></li>
+				<li><a href="../html/ibprinting.html">Print</a></li>
+				<li><a href="../html/dev.html">Dev</a></li>
+				<li><a href="../html/projects.html">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
 
-            <a href="../index.html">
-                <img src="../png/logo.PNG" alt="IBConcept Logo" class="logo">
-            </a>
-
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="dev.html">Dev</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blogs.html">Blog</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="ibprinting.html">Print</a></li>
-                <li><a href="clients.html">Partners</a></li>
-
-            </ul>
-
-            <!-- Hamburger Icon -->
-            <div class="hamburger">
-                <span class="material-icons">☰</span>
-            </div>
-        </nav>
-    </header>
 
     <div class="print-categories-list">
         <h2>Print Categories</h2>
@@ -211,7 +250,7 @@
 
     <!-- Image Gallery -->
     <p>
-
+<div>
         <img class="image-gallery" src="../JPG/1.JPG" alt="print-sample1">
         <img class="image-gallery" src="../JPG/2.jpg" alt="print-sample2">
         <img class="image-gallery" src="../JPG/3.jpg" alt="print-sample3">
@@ -219,6 +258,9 @@
         <!-- <img class="image-gallery" src="../JPG/5.png" alt="print-sample5"> -->
         <!-- <img class="image-gallery" src="../JPG/7.png" alt="print-sample7"> -->
         <img class="image-gallery" src="../JPG/8.jpg" alt="print-sample8">
+
+    </div>
+
 
     </p>
     
@@ -268,6 +310,16 @@
     </div>
 </div>
     
+
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
 
 
