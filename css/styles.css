@@ -20,7 +20,6 @@ a {
     text-decoration: none;
 }
 
-
 li {
     list-style-type: none;
 }
@@ -29,7 +28,7 @@ body {
     font-family: "Montserrat", "Open Sans", "Roboto", sans-serif;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    margin: 0;
+    margin: 20px; /* Add margin around the entire page */
     padding: 0;
     scroll-behavior: smooth;
     text-align: center;
@@ -38,69 +37,84 @@ body {
 
 html, body {
     overflow-x: hidden;
-  }
-  
+}
 
-
+/* Adjusting the logo size and aligning it horizontally with the navigation */
 .navbar {
     display: flex;
-    align-items: center;
-    background-color:   hsl(0, 50%, 90%);;
-    color: var(--color-secondary);
+    justify-content: space-between; /* Align logo and nav on opposite sides */
+    align-items: center; /* Center align logo and nav items vertically */
+    padding: 10px 20px;
+    background-color: transparent;
+    width: 100%;
     position: sticky;
     top: 0;
-
     z-index: 1000;
 }
 
-.nav-links {
-    list-style: none;
+.logo-container {
     display: flex;
     align-items: center;
+}
+
+.logo {
+    width: 80px; /* Slightly increase the logo size */
+    height: auto;
+    margin-right: auto; /* Ensure proper spacing */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
     text-decoration: none;
-    /* font-weight: bold; */
-    margin: 1em;
-    /* color: aliceblue; */
-    font-size: 16px;
-    border-radius: 3px;
-    /* text-align: center; */
-    /* padding: 1em; */
+    font-size: 18px; /* Increase font size for header items */
+    color: var(--color-secondary);
+    padding: 10px 15px; /* Add more padding for clickable area */
     transition: color 0.3s ease-in-out;
-    border-bottom: 1px solid #FF1493;  /* Correct border syntax */
-}
-.nav-links li a:hover {
-    color: #FF1493;
-    background-color: #2f143f;
 }
 
-p{
-    max-width:  80vw;
-    margin: 0 auto;
-    text-align: center;
+/* Adding hover background color for navigation items */
+.nav-links li a:hover {
+    color: var(--color-accent);
+    background-color: rgba(0, 0, 0, 0.1); /* Subtle hover background color */
+    border-radius: 5px; /* Optional: Add rounded corners for hover effect */
 }
 
 .hamburger {
-    display: none;
-   
-    cursor: pointer;
+    display: none; /* Hide hamburger menu for larger screens */
+}
+
+p {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hamburger .material-icons {
     font-size: 24px;
     font-weight: 900;
-    
 }
 
-video, img , button {
+video, .image, button {
     margin: 1em;
-
     width: 80vw;
     border-radius: 20px;
     height: auto;
     object-fit: cover;
+}
+
+/* Adjusting the video hero to be smaller */
+video {
+    width: 60vw; /* Reduce the width of the video hero */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Add margin around the video */
+    display: block; /* Center the video */
 }
 
 .image-gallery {
@@ -141,7 +155,6 @@ p {
     text-indent: 2em;
 }
 
-
 h3 {
     padding: 0 12%;
     text-align: center;
@@ -171,10 +184,6 @@ main div {
     transition: transform 0.3s ease;
 }
 
-
-
-
-
 button {
     height: 40px;
     color: #4a3f5f;
@@ -189,7 +198,6 @@ button:hover, .nav li:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 .social-icons {
     margin-top: 5px;
@@ -225,22 +233,6 @@ button:hover, .nav li:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .icon:hover {
     color: var(--color-accent);
 }
@@ -264,21 +256,13 @@ footer {
     justify-content: space-evenly;
 }
 
-
 .logo {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
     border-radius: initial;
-    width: 13%;
-    margin-right: 0vw;
 }
-
 
 .footer-section {
     flex: 1;
     margin: 1em;
-
 }
 
 .footer ul {
@@ -290,15 +274,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: morph 10s cubic-bezier(0.32, 0, 0.58, 1) infinite;
     border-radius: 0 0 30px 30px;
     padding-bottom: 5px;
 }
 
-
 table {
     width: 80vw;
-    
     border-collapse: collapse;
     margin: 0 auto;
     background-color: var(--color-primary);
@@ -332,23 +313,6 @@ caption {
     color: var(--color-tertiary);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes morph {
     0% {
         background: radial-gradient(circle at 10% 0%, rgb(236, 208, 245), rgb(252, 144, 153));
@@ -368,44 +332,32 @@ caption {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar{
-
-        background-color:initial;
+    .hamburger {
+        display: block; /* Ensure hamburger menu is visible */
+        cursor: pointer;
     }
 
     .nav-links {
+        display: none; /* Hide nav links by default */
         flex-direction: column;
-        gap: 10px;
-        background-color: #581042;
-        color: aliceblue;
         position: absolute;
-        top: 70px;
+        top: 60px;
         right: 20px;
-        width: 200px;
-        display: none;
+        background-color: var(--color-primary);
         border-radius: 8px;
-        padding: 10px 0;
-        
+        padding: 10px;
+        z-index: 1000; /* Ensure it appears above other elements */
     }
-
-
-    .nav-links li a {
-color: aliceblue;
-    }
-
 
     .nav-links.active {
-        display: flex;
-        color: aliceblue;
-text-align: left;
-margin: 3px;
-margin-top: 36px;
+        display: flex; /* Show nav links when active */
     }
 
-    .hamburger {
-        display: flex;
-        position: absolute;
-        margin-left: 70vw;
+    video {
+        width: 100%; /* Ensure video is responsive and visible */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px auto; /* Add margin for spacing */
+        display: block; /* Center the video */
     }
 
     div {
