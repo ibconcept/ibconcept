@@ -17,6 +17,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="manifest" href="site.webmanifest?v=1.0">
 
 
@@ -386,13 +387,14 @@
 		hamburger.addEventListener('click', () => {
 			navLinks.classList.toggle('active');
 		});
+
+		// Close menu when clicking outside
+		document.addEventListener('click', (e) => {
+			if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+				navLinks.classList.remove('active');
+			}
+		});
 	</script>
-
-
-
-
-
-
 
 </body>
 

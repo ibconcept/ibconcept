@@ -315,25 +315,54 @@ caption {
 
 
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 0; /* Remove horizontal padding to allow edge positioning */
+    }
+
     .hamburger {
-        display: block; /* Ensure hamburger menu is visible */
+        display: block;
         cursor: pointer;
+        position: absolute;
+        left: 100px;
+        padding: 10px;
+        z-index: 1001;
     }
 
     .nav-links {
-        display: none; /* Hide nav links by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
+        display: none;
+        position: fixed; /* Change to fixed for full screen overlay */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Perfect centering */
         background-color: var(--color-primary);
+        padding: 20px;
         border-radius: 8px;
-        padding: 10px;
-        z-index: 1000; /* Ensure it appears above other elements */
+        text-align: center;
+        width: 80%; /* Width of the nav menu */
+        z-index: 1000;
     }
 
     .nav-links.active {
-        display: flex; /* Show nav links when active */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a:focus {
+        border-bottom: 2px solid var(--color-tertiary);
     }
 
     video {
@@ -381,6 +410,7 @@ caption {
     }
 
     .hamburger {
+        
         font-size: 1.8rem; /* Adjust hamburger icon size */
         padding: 10px; /* Add padding for better touch area */
     }
