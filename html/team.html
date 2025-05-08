@@ -47,6 +47,7 @@
   
   <title>IBConcept Design Agency</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Internal CSS -->
   <style>
@@ -117,7 +118,7 @@
 
 
   <header>
-		<nav class="navbar">
+		<nav class="navbar" data-aos="fade-down">
 			<a href="../html/projects.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo - Team" class="logo">
 			</a>
@@ -137,23 +138,23 @@
 
 
   <main>
-    <h1>Join the IBConcept Team</h1>
-    <p>Join the ibconcept community TEAM of hundreds of dedicated, passionate  
+    <h1 data-aos="fade-up">Join the IBConcept Team</h1>
+    <p data-aos="fade-up" data-aos-delay="100">Join the ibconcept community TEAM of hundreds of dedicated, passionate  
       DEVELOPERS and professional DESIGNERS and learn how to use Data, behavioral design to improve your productivity as a designer.</p>
 
-    <div class="team-member">
+    <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
       <figure>
         <img src="../png/william.png" alt="William - Founder and CEO">
         <figcaption>William - Founder/CEO</figcaption>
       </figure>
     </div>
-    <div class="team-member">
+    <div class="team-member" data-aos="zoom-in" data-aos-delay="300">
       <figure>
         <img src="../png/moshin.PNG" alt="Moshin - Technical Lead">
         <figcaption>Moshin - Technical Lead</figcaption>
       </figure>
     </div>
-    <div class="team-member">
+    <div class="team-member" data-aos="zoom-in" data-aos-delay="400">
       <figure>
         <img src="../png/fatima.PNG" alt="Fatima - SRE Lead">
         <figcaption>Fatima - SRE Lead</figcaption>
@@ -162,12 +163,19 @@
 
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2024 IBConcept Design Agency | All Rights Reserved</p>
   </footer>
 
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+		AOS.init({
+			duration: 800,
+			easing: 'ease-out',
+			once: true
+		});
+
 		const hamburger = document.querySelector('.hamburger');
 		const navLinks = document.querySelector('.nav-links');
 

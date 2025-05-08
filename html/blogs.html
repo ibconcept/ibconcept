@@ -78,6 +78,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ibconcept Blogs</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         body {
@@ -295,10 +296,10 @@ header {
 	</header> -->
 
 
-    <div class="side-panel">
+    <div class="side-panel" data-aos="fade-right">
         <a href="../index.html"><img src="../png/logo.PNG" alt="IBConcept Logo - Blogs on Web Development and Branding" class="logo"></a> 
-        <p> <u></u><b>Articles</b></u></p>
-        <ul>
+        <p data-aos="fade-up"><u></u><b>Articles</b></u></p>
+        <ul data-aos="fade-up" data-aos-delay="100">
             <li><a href="#" onclick="showBlog(0)">Intro to Modern Brand Concept</a> </li>
             <li><a href="#" onclick="showBlog(1)">Key Considerations on Web Development</a></li>
         </ul>
@@ -306,11 +307,11 @@ header {
 
     
     <div class="content-area">
-        <p>Click on panel to article to read, find more dev articles on
+        <p data-aos="fade-up">Click on panel to article to read, find more dev articles on
              <a href="
              https://medium.com/@williammaina"> <p> <b>Medium</b></a></p>
              <a href="../index.html"><p ><<-back</p></a>
-        <div class="article">
+        <div class="article" data-aos="fade-up" data-aos-delay="200">
             <h2 onclick="toggleBlog(this)">Intro to Modern Brand Concept</h2>
             <div class="full-content">
                     <article>
@@ -344,7 +345,7 @@ header {
             </div>
         </div>
 
-        <div class="article">
+        <div class="article" data-aos="fade-up" data-aos-delay="200">
             <h2 onclick="toggleBlog(this)">Key Considerations on Web Development</h2>
             <div class="full-content">
 
@@ -378,7 +379,14 @@ header {
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true
+        });
+
         // Function to toggle visibility of a specific blog
         function toggleBlog(titleElement) {
             const parentArticle = titleElement.closest('.article');

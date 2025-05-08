@@ -24,6 +24,7 @@
 	<title>Iboncept - Pricing</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="ibconcept" content="Is a Web development, design and printing institution">
 	<meta name="keywords" content="web development, app development, design for print and web, gigs, branding, digital transformation, design agency">
@@ -88,7 +89,7 @@
 
 
 	<header>
-		<nav class="navbar">
+		<nav class="navbar" data-aos="fade-down">
 			<a href="../html/projects.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo - Pricing" class="logo">
 			</a>
@@ -107,24 +108,24 @@
 	</header>
 
 
-	<h1 style="text-align: center;">Pricing</h1>
+	<h1 style="text-align: center;" data-aos="fade-up">Pricing</h1>
 
-	<p style="text-align: center;">At Iboncept, we believe in transparent and accessible pricing to help you make
+	<p style="text-align: center;" data-aos="fade-up" data-aos-delay="100">At Iboncept, we believe in transparent and accessible pricing to help you make
 		informed decisions for your web development and design needs. Our pricing structure reflects our commitment to
 		quality and innovation. Below, you'll find a breakdown of our services along with their corresponding rates in
 		Kenyan Shillings and approximate values in US Dollars. We strive to deliver exceptional value and expertise in
 		every aspect of design, development, branding, and digital marketing.</p>
 
-	<p><b>pricing is monthly for support related services</b></p>
-	<p>a terms of services contract or proposal contract is signed where need be</p>
-	<p>clients can get refund of upto 75% where work was done but cclient not satisfied</p>
-	<p>other pricing with detailing more technical work like api impletation is price on milestones with a required
+	<p data-aos="fade-up" data-aos-delay="200"><b>pricing is monthly for support related services</b></p>
+	<p data-aos="fade-up" data-aos-delay="250">a terms of services contract or proposal contract is signed where need be</p>
+	<p data-aos="fade-up" data-aos-delay="300">clients can get refund of upto 75% where work was done but cclient not satisfied</p>
+	<p data-aos="fade-up" data-aos-delay="350">other pricing with detailing more technical work like api impletation is price on milestones with a required
 		downpayment</p>
 
-	<h2>
+	<h2 data-aos="fade-up">
 		<hr>
 	</h2>
-	<div>
+	<div data-aos="fade-up" data-aos-delay="400">
 		<table >
 			<tr>
 				<th>Service</th>
@@ -180,7 +181,7 @@
 		</table>
 	</div>
 
-	<a href="https://api.whatsapp.com/send?phone=254719301330">
+	<a href="https://api.whatsapp.com/send?phone=254719301330" data-aos="fade-up" data-aos-delay="500">
 		<button id="getQuoteButton">Talk to us!</button>
 	</a>
 
@@ -189,7 +190,14 @@
 	</div>
 
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+		AOS.init({
+			duration: 800,
+			easing: 'ease-out',
+			once: true
+		});
+
 		const hamburger = document.querySelector('.hamburger');
 		const navLinks = document.querySelector('.nav-links');
 

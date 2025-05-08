@@ -19,6 +19,7 @@
 	<title>IBConcept Web and App Development</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="ibconcept" content="Is a Web development, design and printing institution">
     <meta name="keywords" content="web development, app development, design for print and web, gigs, branding, digital transformation, design agency">
     <meta name="description" content="Brief description of ibconcept and its Is a Web development, design and printing institution">
@@ -113,7 +114,7 @@
 
 <body>
     <header>
-		<nav class="navbar">
+		<nav class="navbar" data-aos="fade-down">
 			
 				<a href="clients.html">
 					<img src="../png/logo.PNG" alt="IBConcept Logo - Digital Opportunity Index" class="logo">
@@ -139,7 +140,7 @@
 
 
 
-<pre>
+<pre data-aos="fade-up" data-aos-delay="100">
  Here's a draft metric that emphasizes the comparison between the number of users on the internet and the missed opportunities for businesses without an online presence:
 
 Metric Name: Digital Opportunity Index (DOI)
@@ -186,12 +187,21 @@ This metric provides a quantitative representation of the untapped potential in 
 online presence, such as increased visibility, customer reach, and revenue opportunities.
 </pre>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+        once: true
+    });
 
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-
-
-
-
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
     
    </body>     

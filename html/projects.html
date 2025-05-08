@@ -17,6 +17,7 @@
 	<title>IBConcept Design Agency Projects</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="ibconcept" content="Is a Web development, design and printing institution">
 	<meta name="keywords" content="web development, app development, design for print and web, gigs, branding, digital transformation, design agency">
 	<meta name="description" content="Brief description of ibconcept and its Is a Web development, design and printing institution">
@@ -125,7 +126,7 @@
 
 
 	<header>
-		<nav class="navbar">
+		<nav class="navbar" data-aos="fade-down">
 			<a href="../index.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo - Projects" class="logo">
 			</a>
@@ -145,11 +146,11 @@
 
 
 
-	<h1>Join the nerds</h1>
+	<h1 data-aos="fade-up">Join the nerds</h1>
 
 
 <!-- General Call to Action for All Projects -->
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-up" data-aos-delay="100">
 	<h3>Join Our Visionary Projects!</h3>
 	<p>We are working on multiple exciting projects at IBConcept, and we need passionate developers to help us bring these ideas to life. Whether you’re interested in automotive, education, traffic management, or business hubs, there’s a project for you!</p>
 	<a href="https://github.com/ibconcept" class="btn-cta">
@@ -161,7 +162,7 @@
 
 	<div class="projects-container">
 		<!-- Autosite Project -->
-		<div class="project-card">
+		<div class="project-card" data-aos="zoom-in" data-aos-delay="200">
 			<h2>Autosite</h2>
 			<p>An auto-website builder for end users </p>
 			<a href="https://ibconcept.github.io/autosite/" class="btn-cta">
@@ -170,7 +171,7 @@
 		</div>
 
 		<!-- ABBH Project -->
-		<div class="project-card">
+		<div class="project-card" data-aos="zoom-in" data-aos-delay="300">
 			<h2>ABBH</h2>
 			<p>A project designed to enhance the accessibility and efficiency of business hubs.</p>
 			<a href="https://devmaina.github.io/ABBH/" class="btn-cta">
@@ -179,7 +180,7 @@
 		</div>
 
 		<!-- SmartSkool Project -->
-		<div class="project-card">
+		<div class="project-card" data-aos="zoom-in" data-aos-delay="400">
 			<h2>SmartSkool</h2>
 			<p>An educational platform leveraging smart technology for enhanced learning experiences.</p>
 			<a href="https://github.com/your-repo-link/smartskool" class="btn-cta">
@@ -188,7 +189,7 @@
 		</div>
 
 		<!-- Idhaa App Project -->
-		<div class="project-card">
+		<div class="project-card" data-aos="zoom-in" data-aos-delay="500">
 			<h2>Idhaa App</h2>
 			<p>A traffic app aiming to ease urban traffic congestion and provide real-time updates for commuters.</p>
 			<a href="https://github.com/your-repo-link/idhaa-app" class="btn-cta">
@@ -201,7 +202,14 @@
 
 
 	
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+		AOS.init({
+			duration: 800,
+			easing: 'ease-out',
+			once: true
+		});
+
 		const hamburger = document.querySelector('.hamburger');
 		const navLinks = document.querySelector('.nav-links');
 

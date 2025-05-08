@@ -72,7 +72,8 @@ html, body {
 }
 
 .nav-links li a {
-    text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(46, 8, 68, 0.2);
+    text-decoration: none;  
     font-size: 18px; /* Increase font size for header items */
     color: var(--color-secondary);
     padding: 10px 15px; /* Add more padding for clickable area */
@@ -316,7 +317,7 @@ caption {
     }
 
     .nav-links {
-        display: none;
+        display: none; 
         position: fixed; /* Change to fixed for full screen overlay */
         top: 50%; /* Center vertically */
         left: 50%; /* Center horizontally */
@@ -419,4 +420,30 @@ caption {
     .nav-links {
         font-size: 0.9rem; /* Adjust font size for navigation links */
     }
+}
+
+/* AOS Animation Enhancements */
+[data-aos] {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-aos].aos-animate {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* Custom animation for zoom-in effect */
+[data-aos="zoom-in"] {
+    transform: scale(0.95);
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale(1);
+}
+
+/* Add smooth transition to all animated elements */
+.main div, .image, button, h1, h2, p {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }

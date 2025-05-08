@@ -12,6 +12,7 @@
 	<title>IBConcept Web and App Development</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
     <meta name="ibconcept" content="Is a Web development, design and printing institution">
     <meta name="keywords" content="web development, app development, design for print and web, gigs, branding, digital transformation, design agency">
@@ -111,7 +112,7 @@
 <body>
 
     <header>
-		<nav class="navbar">
+		<nav class="navbar" data-aos="fade-down">
 			<a href="../html/projects.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo - Web and App Development" class="logo">
 			</a>
@@ -129,69 +130,64 @@
 		</nav>
 	</header>
 
-
-
-
-
-    <h2>Websites and application development and support</h2>
-    <h4>Platforms under design, <br>development and support</h4>
+    <h2 data-aos="fade-up">Websites and application development and support</h2>
+    <h4 data-aos="fade-up" data-aos-delay="100">Platforms under design, <br>development and support</h4>
     
-
-
-  
-    <h2>2let</h2>    
-    <iframe src="https://ibconcept.github.io/2let/" ></iframe>
+    <h2 data-aos="fade-up">2let</h2>    
+    <iframe src="https://ibconcept.github.io/2let/" data-aos="zoom-in" data-aos-delay="200"></iframe>
     
-    <h2>ksl kids scrible</h2>
-    <iframe src="   https://ibconcept.github.io/ksl/" ></iframe>
+    <h2 data-aos="fade-up">ksl kids scrible</h2>
+    <iframe src="   https://ibconcept.github.io/ksl/" data-aos="zoom-in" data-aos-delay="200"></iframe>
  
+    <h2 data-aos="fade-up">mademax</h2>
+    <iframe src="https://ibconcept.github.io/mademax/" data-aos="zoom-in" data-aos-delay="200"></iframe>
     
-    <h2>mademax</h2>
-    <iframe src="https://ibconcept.github.io/mademax/" ></iframe>
-    
-    <h2>CarMzigo</h2>
-    <iframe src="https://ibconcept.github.io/smartskool/"></iframe>
+    <h2 data-aos="fade-up">CarMzigo</h2>
+    <iframe src="https://ibconcept.github.io/smartskool/" data-aos="zoom-in" data-aos-delay="200"></iframe>
    
+    <h2 data-aos="fade-up">reecit</h2>
+    <iframe src="https://reecit.click/" data-aos="zoom-in" data-aos-delay="200"></iframe>
+    
+    <h2 data-aos="fade-up">kazi-kazi/</h2>
+    <iframe src="https://kazi-kazi.click" data-aos="zoom-in" data-aos-delay="200"></iframe>
+    
+    <h2 data-aos="fade-up">tendafree</h2>
+    <iframe src="https://ibconcept.github.io/tendafree/" data-aos="zoom-in" data-aos-delay="200"></iframe>
+
+    <h2 data-aos="fade-up">soko2540</h2>
+    <iframe src="https://ibconcept.github.io/soko2540/" data-aos="zoom-in" data-aos-delay="200"></iframe>
    
-    <h2>reecit</h2>
-    <iframe src="https://reecit.click/"></iframe>
+    <h2 data-aos="fade-up">Stikas</h2>
+    <iframe src="https://stikas.xyz/" data-aos="zoom-in" data-aos-delay="200"></iframe>
     
-    <h2>kazi-kazi/</h2>
-    <iframe src="https://kazi-kazi.click"></iframe>
+    <h2 data-aos="fade-up">pccenter</h2>
+    <iframe src="https://www.pccenter.co" data-aos="zoom-in" data-aos-delay="200"></iframe>
     
-    <h2>tendafree</h2>
-    <iframe src="https://ibconcept.github.io/tendafree/"></iframe>
-    <h2>soko2540</h2>
-    <iframe src="https://ibconcept.github.io/soko2540/" ></iframe>
-   
-    <h2>Stikas</h2>
-    <iframe src="https://stikas.xyz/" ></iframe>
-
+    <h2 data-aos="fade-up">tendaconnnect</h2>
+    <iframe src="https://ibconcept.github.io/tenderconnect/" data-aos="zoom-in" data-aos-delay="200"></iframe>
     
-    <h2>pccenter</h2>
-    <iframe src="https://www.pccenter.co" ></iframe>
-    
-    <h2>tendaconnnect</h2>
-    <iframe src="https://ibconcept.github.io/tenderconnect/"></iframe>
-    
-    <h2>smartskool</h2>
-    <iframe src="https://smartskool.click/"></iframe>
+    <h2 data-aos="fade-up">smartskool</h2>
+    <iframe src="https://smartskool.click/" data-aos="zoom-in" data-aos-delay="200"></iframe>
 
-    <h2>ABBH</h2>
-    <iframe src="https://devmaina.github.io/ABBH/"></iframe>
+    <h2 data-aos="fade-up">ABBH</h2>
+    <iframe src="https://devmaina.github.io/ABBH/" data-aos="zoom-in" data-aos-delay="200"></iframe>
 
-	 
- 
-	<script>
-		const hamburger = document.querySelector('.hamburger');
-		const navLinks = document.querySelector('.nav-links');
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true
+        });
 
-		hamburger.addEventListener('click', () => {
-			navLinks.classList.toggle('active');
-		});
-	</script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
-   </body>     
+</body>     
 
 </html>
