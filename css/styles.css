@@ -313,23 +313,6 @@ caption {
     color: var(--color-tertiary);
 }
 
-@keyframes morph {
-    0% {
-        background: radial-gradient(circle at 10% 0%, rgb(236, 208, 245), rgb(252, 144, 153));
-    }
-    25% {
-        background: radial-gradient(circle at 20% 0%, rgb(255, 156, 247), rgb(187, 245, 255));
-    }
-    50% {
-        background: radial-gradient(circle at 80% 100%, rgb(193, 154, 245), #dc758fff);
-    }
-    75% {
-        background: radial-gradient(circle at 30% 100%, rgb(253, 201, 214), rgb(224, 135, 221));
-    }
-    100% {
-        background: radial-gradient(circle at 20% 0%, rgb(255, 150, 190), rgb(236, 208, 245));
-    }
-}
 
 @media screen and (max-width: 768px) {
     .hamburger {
@@ -388,5 +371,33 @@ caption {
         width: 30vw;
         margin-top: 5vw;
         margin-right: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 20vw; /* Reduce logo size for better fit on smaller screens */
+        margin: 0 auto; /* Center the logo */
+    }
+
+    .hamburger {
+        font-size: 1.8rem; /* Adjust hamburger icon size */
+        padding: 10px; /* Add padding for better touch area */
+    }
+
+    body {
+        font-size: 0.9rem; /* Use smaller font size for better readability */
+    }
+
+    h1, h2 {
+        font-size: 1.2rem; /* Reduce heading font size */
+    }
+
+    p {
+        font-size: 0.8rem; /* Reduce paragraph font size */
+    }
+
+    .nav-links {
+        font-size: 0.9rem; /* Adjust font size for navigation links */
     }
 }
