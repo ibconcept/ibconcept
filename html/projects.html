@@ -3,14 +3,24 @@
 
 <head>
 
+	<!-- DNS Prefetching -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+	<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+	<!-- Resource Preloading -->
+	<link rel="preload" href="../css/styles.css" as="style">
+	<link rel="preload" href="/png/logo.PNG" as="image" type="image/png">
 
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6340261732299088"
 	crossorigin="anonymous"></script>
-
-
-
-
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,9 +68,6 @@
 
 <body>
 
-
-
-
 	<header>
 		<nav class="navbar">
 			<a href="../index.html">
@@ -80,21 +87,16 @@
 		</nav>
 	</header>
 
-
-
 	<h1>Join the nerds</h1>
 
-
-<!-- General Call to Action for All Projects -->
-<div class="cta-section">
-	<h3>Join Our Visionary Projects!</h3>
-	<p>We are working on multiple exciting projects at IBConcept, and we need passionate developers to help us bring these ideas to life. Whether you’re interested in automotive, education, traffic management, or business hubs, there’s a project for you!</p>
-	<a href="https://github.com/ibconcept" class="btn-cta">
-		<i class="fa fa-github"></i> Contribute on GitHub
-	</a>
-</div>
-
-
+	<!-- General Call to Action for All Projects -->
+	<div class="cta-section">
+		<h3>Join Our Visionary Projects!</h3>
+		<p>We are working on multiple exciting projects at IBConcept, and we need passionate developers to help us bring these ideas to life. Whether you’re interested in automotive, education, traffic management, or business hubs, there’s a project for you!</p>
+		<a href="https://github.com/ibconcept" class="btn-cta">
+			<i class="fa fa-github"></i> Contribute on GitHub
+		</a>
+	</div>
 
 	<div class="projects-container">
 		<!-- Autosite Project -->
@@ -135,9 +137,6 @@
 
 	</div>
 
-
-
-	
 	<script>
 		const hamburger = document.querySelector('.hamburger');
 		const navLinks = document.querySelector('.nav-links');
@@ -146,8 +145,6 @@
 			navLinks.classList.toggle('active');
 		});
 	</script>
-
-
 
 </body>
 
