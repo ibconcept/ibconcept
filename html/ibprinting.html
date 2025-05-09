@@ -9,14 +9,19 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/png/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/png/apple-touch-icon.png">
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-xrDMKXEfSapgfFi/NQqRf4f5vqKO9U8ce3sMjHa+y3YXadEbI1oU1TG4hpTToEeYAAM+0XjxnsXt41JdR4PC0w=="
         crossorigin="anonymous" />
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="ibconcept" content="Is a Web development, design and printing institution">
@@ -40,9 +45,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Mobile App Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/png/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/png/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Canonical URL for search engines -->
@@ -81,87 +86,6 @@
 
    <title>IB Printing</title>
 
-
-<style>
-.print-categories-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-.print-category-card {
-    width: 13em;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.print-category-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.print-category-card i {
-    font-size: 40px;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.print-category-card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.print-category-card p {
-    font-size: 14px;
-    color: #555;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .print-category-card {
-        width: 100%;
-        max-width: none;
-        margin: 0 auto;
-        
-    }
-
-    .image-gallery {
-        width: 80vw;
-        padding: 8px;
-
-        margin: 0 auto;
-
-    }
-
-    .print-categories-list {
-        display: block;
-        gap: 10px;
-        margin: 0 auto;
-
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .print-category-card {
-        width: 30%;
-    }
-
-    .print-categories-list {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-
-
-
-</style>
 
 <script type="application/ld+json">
 {
@@ -205,7 +129,7 @@
 
 
     <header>
-		<nav class="navbar" data-aos="fade-down">
+		<nav class="navbar">
 			<a href="../html/projects.html">
 				<img src="../png/logo.PNG" alt="IBConcept Logo - Printing Services" class="logo">
 			</a>
@@ -225,48 +149,48 @@
 
 
     <div class="print-categories-list">
-        <h2 data-aos="fade-up">Print Categories</h2>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="100">
+        <h2>Print Categories</h2>
+        <div class="print-category-card">
             <i class="material-icons">image</i>
             <h3>Large Format</h3>
             <p>High-quality large format prints for banners, posters, and more.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="print-category-card">
             <i class="material-icons">cut</i>
             <h3>Vinyl Cutting</h3>
             <p>Custom vinyl cutting services for various applications.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="print-category-card">
             <i class="material-icons">thermometer</i>
             <h3>Heatpress Service</h3>
             <p>Durable heatpress printing for t-shirts, mugs, and more.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="print-category-card">
             <i class="material-icons">business_center</i>
             <h3>Business Cards</h3>
             <p>Professional business cards to enhance your networking.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="print-category-card">
             <i class="material-icons">image</i>
             <h3>Logos</h3>
             <p>Design and print unique logos that represent your brand.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="600">
+        <div class="print-category-card">
             <i class="material-icons">work</i>
             <h3>Office Branding</h3>
             <p>Transform your office with custom branding and signage.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="700">
+        <div class="print-category-card">
             <i class="material-icons">sticky_note_2</i>
             <h3>Stickers & Banners</h3>
             <p>Create eye-catching stickers and banners for all purposes.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="800">
+        <div class="print-category-card">
             <i class="material-icons">directions_bus</i>
             <h3>Matatu Stickers</h3>
             <p>Custom stickers for matatu branding with vibrant designs.</p>
         </div>
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="900">
+        <div class="print-category-card">
             <i class="material-icons">post_add</i>
             <h3>Posters</h3>
             <p>High-quality posters for advertising, events, and promotions.</p>
@@ -287,10 +211,10 @@
     <!-- Image Gallery -->
     <p>
 <div>
-        <img class="image-gallery" src="../JPG/1.JPG" alt="Print Sample 1" data-aos="fade-up">
-        <img class="image-gallery" src="../JPG/2.jpg" alt="Print Sample 2" data-aos="fade-up" data-aos-delay="100">
-        <img class="image-gallery" src="../JPG/3.jpg" alt="Print Sample 3" data-aos="fade-up" data-aos-delay="200">
-        <img class="image-gallery" src="../JPG/4.jpg" alt="Print Sample 4" data-aos="fade-up" data-aos-delay="300">
+        <img class="image-gallery" src="../JPG/1.JPG" alt="Print Sample 1">
+        <img class="image-gallery" src="../JPG/2.jpg" alt="Print Sample 2">
+        <img class="image-gallery" src="../JPG/3.jpg" alt="Print Sample 3">
+        <img class="image-gallery" src="../JPG/4.jpg" alt="Print Sample 4">
         <!-- <img class="image-gallery" src="../JPG/5.png" alt="print-sample5"> -->
         <!-- <img class="image-gallery" src="../JPG/7.png" alt="print-sample7"> -->
         <!-- <img class="image-gallery" src="../JPG/8.jpg" alt="print-sample8"> -->
@@ -299,44 +223,44 @@
 
     </p>
 
-    <div class="print-process" data-aos="fade-up">
+    <div class="print-process">
         <h2>Print Process & Print Machines</h2>
         <p>At IB Printing, we pride ourselves on delivering high-quality printing services and machines tailored to meet your unique needs...</p>
     </div>
 
     <div class="print-categories-list">
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="print-category-card">
             <i class="material-icons">business</i>
             <h3>Business Cards</h3>
             <p>We print professional business cards for your networking needs.</p>
         </div>
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="print-category-card">
             <i class="material-icons">image</i>
             <h3>Logos</h3>
             <p>Create a lasting impression with a unique and memorable logo design.</p>
         </div>
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="print-category-card">
             <i class="material-icons">description</i>
             <h3>Posters</h3>
             <p>Eye-catching posters to promote your events or products.</p>
         </div>
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="print-category-card">
             <i class="material-icons">directions_bus</i>
             <h3>Matatu Stickers</h3>
             <p>Custom stickers for your matatu with vibrant designs.</p>
         </div>
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="print-category-card">
             <i class="material-icons">tshirt</i>
             <h3>T-Shirts</h3>
             <p>High-quality printing on t-shirts for your brand or events.</p>
         </div>
     
-        <div class="print-category-card" data-aos="zoom-in" data-aos-delay="600">
+        <div class="print-category-card">
             <i class="material-icons">mug</i>
             <h3>Cups</h3>
             <p>Personalized cups with your logo or special design.</p>
@@ -346,14 +270,7 @@
     
 
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out',
-        once: true
-    });
-
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 

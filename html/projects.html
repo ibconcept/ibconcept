@@ -17,7 +17,6 @@
 	<title>IBConcept Design Agency Projects</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="ibconcept" content="Is a Web development, design and printing institution">
 	<meta name="keywords" content="web development, app development, design for print and web, gigs, branding, digital transformation, design agency">
 	<meta name="description" content="Brief description of ibconcept and its Is a Web development, design and printing institution">
@@ -55,69 +54,6 @@
 	}
 	</script>
 
-<style>
-
-.projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 20px;
-}
-
-.project-card {
-	background-color: #f8f8f8;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	width: 280px;
-	padding: 20px;
-	margin: 10px;
-	text-align: center;
-	transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover {
-	transform: translateY(-10px);
-}
-
-.project-card h2 {
-	font-size: 1.6em;
-	color: #333;
-}
-
-.project-card p {
-	font-size: 1.1em;
-	color: #555;
-}
-
-.btn-cta {
-	display: inline-block;
-	padding: 10px 20px;
-	background-color: #333;
-	color: white;
-	text-decoration: none;
-	border-radius: 5px;
-	margin-top: 10px;
-	font-size: 1.1em;
-	transition: background-color 0.3s;
-}
-
-.btn-cta:hover {
-	background-color: #555;
-}
-
-.btn-cta i {
-	margin-right: 8px;
-}
-
-
-
-
-</style>
-
-
-
-
-
 </head>
 
 <body>
@@ -126,7 +62,7 @@
 
 
 	<header>
-		<nav class="navbar" data-aos="fade-down">
+		<nav class="navbar">
 			<a href="../index.html">
 				<img src="/png/logo.PNG" alt="IBConcept Logo - Projects" class="logo">
 			</a>
@@ -146,11 +82,11 @@
 
 
 
-	<h1 data-aos="fade-up">Join the nerds</h1>
+	<h1>Join the nerds</h1>
 
 
 <!-- General Call to Action for All Projects -->
-<div class="cta-section" data-aos="fade-up" data-aos-delay="100">
+<div class="cta-section">
 	<h3>Join Our Visionary Projects!</h3>
 	<p>We are working on multiple exciting projects at IBConcept, and we need passionate developers to help us bring these ideas to life. Whether you’re interested in automotive, education, traffic management, or business hubs, there’s a project for you!</p>
 	<a href="https://github.com/ibconcept" class="btn-cta">
@@ -162,7 +98,7 @@
 
 	<div class="projects-container">
 		<!-- Autosite Project -->
-		<div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+		<div class="project-card">
 			<h2>Autosite</h2>
 			<p>An auto-website builder for end users </p>
 			<a href="https://ibconcept.github.io/autosite/" class="btn-cta">
@@ -171,7 +107,7 @@
 		</div>
 
 		<!-- ABBH Project -->
-		<div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+		<div class="project-card">
 			<h2>ABBH</h2>
 			<p>A project designed to enhance the accessibility and efficiency of business hubs.</p>
 			<a href="https://devmaina.github.io/ABBH/" class="btn-cta">
@@ -180,7 +116,7 @@
 		</div>
 
 		<!-- SmartSkool Project -->
-		<div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+		<div class="project-card">
 			<h2>SmartSkool</h2>
 			<p>An educational platform leveraging smart technology for enhanced learning experiences.</p>
 			<a href="https://github.com/your-repo-link/smartskool" class="btn-cta">
@@ -189,7 +125,7 @@
 		</div>
 
 		<!-- Idhaa App Project -->
-		<div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+		<div class="project-card">
 			<h2>Idhaa App</h2>
 			<p>A traffic app aiming to ease urban traffic congestion and provide real-time updates for commuters.</p>
 			<a href="https://github.com/your-repo-link/idhaa-app" class="btn-cta">
@@ -202,14 +138,7 @@
 
 
 	
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init({
-			duration: 800,
-			easing: 'ease-out',
-			once: true
-		});
-
 		const hamburger = document.querySelector('.hamburger');
 		const navLinks = document.querySelector('.nav-links');
 
