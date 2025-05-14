@@ -748,3 +748,62 @@ caption {
 .cta-button:hover {
     background-color: #218838;
 }
+
+/* Achievements section styles */
+.achievements-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    background: rgba(88, 12, 66, 0.05);
+    margin: 2rem 0;
+}
+
+.achievement-item {
+    text-align: center;
+    padding: 1rem;
+    min-width: 150px;
+}
+
+.achievement-item .material-icons {
+    font-size: 2.5rem;
+    color: rgb(88, 12, 66);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-item h3 {
+    font-size: 2rem;
+    color: rgb(88, 12, 66);
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.achievement-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .achievements-row {
+        padding: 1rem 0.5rem;
+    }
+    
+    .achievement-item {
+        min-width: 120px;
+        padding: 0.5rem;
+    }
+    
+    .achievement-item .material-icons {
+        font-size: 2rem;
+    }
+    
+    .achievement-item h3 {
+        font-size: 1.5rem;
+    }
+    
+    .achievement-item p {
+        font-size: 0.9rem;
+    }
+}
