@@ -302,6 +302,23 @@ caption {
 }
 
 
+#form-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   /* Centers vertically if #form-wrapper has height (e.g., min-height: 100vh;) */
+    min-height: 100vh;     /* Makes the wrapper take full viewport height for vertical centering */
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 10px 0; /* Remove horizontal padding to allow edge positioning */
@@ -311,7 +328,9 @@ caption {
         display: block;
         cursor: pointer;
         position: absolute;
-        left: 100px;
+        right: 20px; /* Changed from left: 100px to right: 20px to move it to the edge */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Perfect vertical centering */
         padding: 10px;
         z-index: 1001;
     }
@@ -388,8 +407,38 @@ caption {
     .logo {
         position: initial;
         width: 30vw;
-        margin-top: 5vw;
-        margin-right: 50vw;
+        margin-top: 0; /* Remove top margin */
+        margin-left: 20px; /* Add left margin to align with edge */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .achievements-row {
+        width: 80vw; /* Make it 80vw as requested */
+        margin: 1rem auto;
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        gap: 1rem; /* Add gap between items */
+        justify-content: center; /* Center items when wrapped */
+    }
+    
+    .achievement-item {
+        width: calc(50% - 1rem); /* Two items per row on smaller screens */
+        min-width: unset; /* Remove min-width constraint */
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .achievement-item .material-icons {
+        font-size: 1.5rem; /* Slightly smaller icons */
+    }
+    
+    .achievement-item h3 {
+        font-size: 1.2rem; /* Smaller heading size */
+        margin: 0.25rem 0;
+    }
+    
+    .achievement-item p {
+        font-size: 0.8rem; /* Smaller text size */
+        margin: 0;
     }
 }
 
@@ -419,6 +468,12 @@ caption {
 
     .nav-links {
         font-size: 0.9rem; /* Adjust font size for navigation links */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .achievement-item {
+        width: 100%; /* Full width on very small screens */
     }
 }
 
