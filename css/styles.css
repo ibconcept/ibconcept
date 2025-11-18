@@ -42,7 +42,6 @@ html, body {
 /* Adjusting the logo size and aligning it horizontally with the navigation */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Align logo and nav on opposite sides */
     align-items: center; /* Center align logo and nav items vertically */
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.3); /* Darker opacity background for glassmorphism */
@@ -57,10 +56,7 @@ html, body {
     z-index: 1000;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
+ 
 
 .logo {
     width: 80px; /* Slightly increase the logo size */
@@ -95,7 +91,6 @@ html, body {
 
 .hamburger {
     display: none; /* Hide hamburger menu for larger screens */
-    position: absolute;
     right: 10px;
     top: 10px;
     cursor: pointer;
@@ -259,10 +254,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.logo {
-    border-radius: initial;
-}
-
+ 
 .footer-section {
     flex: 1;
     margin: 1em;
@@ -424,52 +416,48 @@ caption {
         justify-content: space-around;
     }
 
-    .logo {
-        position: static; /* Remove absolute positioning to use flexbox */
-        width: 50px; /* Set fixed width for logo */
-        height: auto;
+  
+    .achievements-row {
+        width: 90vw; /* Full width for one line */
+        margin: 0.5rem auto;
+        flex-wrap: nowrap; /* Prevent wrapping to fit all in one line */
+        gap: 0.2rem; /* Small gap */
+        justify-content: space-around; /* Distribute items evenly */
     }
 
-    .achievements-row {
-        width: 80vw; /* Make it 80vw as requested */
-        margin: 1rem auto;
-        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        gap: 1rem; /* Add gap between items */
-        justify-content: center; /* Center items when wrapped */
-    }
-    
     .achievement-item {
-        width: calc(50% - 1rem); /* Two items per row on smaller screens */
-        min-width: unset; /* Remove min-width constraint */
-        padding: 0.75rem;
-        margin-bottom: 1rem;
+        width: 18vw; /* 18vw for each of 5 items to fit */
+        padding: 0.2rem; /* Minimal padding */
+        margin-bottom: 0; /* Remove bottom margin */
+        height: auto; /* Smaller height */
+        flex-shrink: 0; /* Prevent shrinking */
     }
-    
+
     .achievement-item .material-icons {
-        font-size: 1.5rem; /* Slightly smaller icons */
+        font-size: 0.6rem; /* Very small icons */
     }
-    
+
     .achievement-item h3 {
-        font-size: 1.2rem; /* Smaller heading size */
-        margin: 0.25rem 0;
+        font-size: 0.6rem; /* Very small heading size */
+        margin: 0.05rem 0;
     }
-    
+
     .achievement-item p {
-        font-size: 0.8rem; /* Smaller text size */
+        font-size: 0.4rem; /* Very small text size */
         margin: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
     .logo {
-        width: 20vw; /* Reduce logo size for better fit on smaller screens */
-        margin: 0 auto; /* Center the logo */
+        width: 8w; /* Responsive width for logo */
+        /* margin: 0 auto;  */
     }
 
     .hamburger {
         
         font-size: 1.8rem; /* Adjust hamburger icon size */
-        padding: 10px; /* Add padding for better touch area */
+        padding: 3px; /* Add padding for better touch area */
     }
 
     body {
@@ -828,19 +816,20 @@ caption {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 1rem 0;
-    margin: 1.5rem auto;
-    width: 80vw;
+    padding: 0.5rem 0;
+    margin: 1rem auto;
+    width: 90vw;
     max-width: 1200px;
 }
 
 .achievement-item {
     text-align: center;
-    padding: 0.75rem;
-    min-width: 120px;
+    padding: 0.5rem;
+    min-width: 100px;
     transition: transform 0.2s ease;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(88, 12, 66, 0.1);
+    flex: 1;
 }
 
 .achievement-item:hover {
@@ -849,43 +838,21 @@ caption {
 }
 
 .achievement-item .material-icons {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: rgb(88, 12, 66);
     margin-bottom: 0.25rem;
 }
 
 .achievement-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(88, 12, 66);
     margin: 0.25rem 0;
     font-weight: bold;
 }
 
 .achievement-item p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #666;
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .achievements-row {
-        padding: 1rem 0.5rem;
-    }
-    
-    .achievement-item {
-        min-width: 120px;
-        padding: 0.5rem;
-    }
-    
-    .achievement-item .material-icons {
-        font-size: 2rem;
-    }
-    
-    .achievement-item h3 {
-        font-size: 1.5rem;
-    }
-    
-    .achievement-item p {
-        font-size: 0.9rem;
-    }
-}
