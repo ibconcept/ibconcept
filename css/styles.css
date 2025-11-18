@@ -28,7 +28,7 @@ body {
     font-family: "Montserrat", "Open Sans", "Roboto", sans-serif;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    margin: 20px; /* Add margin around the entire page */
+    margin: 0; /* Remove margin causing mess */
     padding: 0;
     scroll-behavior: smooth;
     text-align: center;
@@ -45,10 +45,15 @@ html, body {
     justify-content: space-between; /* Align logo and nav on opposite sides */
     align-items: center; /* Center align logo and nav items vertically */
     padding: 10px 20px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3); /* Darker opacity background for glassmorphism */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border-bottom */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
     width: 100%;
-    position: sticky;
+    position: fixed; /* Changed to fixed for better stickiness */
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -74,8 +79,9 @@ html, body {
 .nav-links li a {
     box-shadow: 4px 4px 8px rgba(46, 8, 68, 0.2);
     text-decoration: none;  
-    font-size: 18px; /* Increase font size for header items */
-    color: var(--color-secondary);
+    border-radius: 13px;
+    font-size: 13px; /* Increase font size for header items */
+    background-color: var(--color-primary);
     padding: 10px 15px; /* Add more padding for clickable area */
     transition: color 0.3s ease-in-out;
 }
@@ -89,6 +95,15 @@ html, body {
 
 .hamburger {
     display: none; /* Hide hamburger menu for larger screens */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--color-secondary);
 }
 
 p {
@@ -114,7 +129,7 @@ video, .image, button {
 video {
     width: 60vw; /* Reduce the width of the video hero */
     height: auto; /* Maintain aspect ratio */
-    margin: 20px auto; /* Add margin around the video */
+    margin: 20px auto;
     display: block; /* Center the video */
 }
 
@@ -258,7 +273,7 @@ footer {
 }
 
 header {
-    margin: 0px;
+    margin-bottom: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,32 +336,36 @@ caption {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 10px 0; /* Remove horizontal padding to allow edge positioning */
+        padding: 10px 20px; /* Restore padding for proper alignment */
+        height: 60px; /* Set fixed height for navbar */
     }
 
     .hamburger {
         display: block;
-        cursor: pointer;
         position: absolute;
-        right: 20px; /* Changed from left: 100px to right: 20px to move it to the edge */
-        top: 50%; /* Center vertically */
-        transform: translateY(-50%); /* Perfect vertical centering */
-        padding: 10px;
-        z-index: 1001;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: none;
+        border: none;
+        box-shadow: none;
+        margin: auto;
     }
 
     .nav-links {
-        display: none; 
+        display: none;
         position: fixed; /* Change to fixed for full screen overlay */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Perfect centering */
-        background-color: var(--color-primary);
+        top: 60px; /* Position below navbar */
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Darker background for glassmorphism */
+        backdrop-filter: blur(10px); /* Blur effect */
+        -webkit-backdrop-filter: blur(10px);
         padding: 20px;
-        border-radius: 8px;
+        border-radius: 0 0 15px 15px; /* Match navbar border-radius */
         text-align: center;
-        width: 80%; /* Width of the nav menu */
-        z-index: 1000;
+        width: 100%; /* Full width */
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -354,6 +373,8 @@ caption {
         flex-direction: column;
         gap: 15px;
     }
+
+
 
     .nav-links li {
         width: 100%;
@@ -363,15 +384,14 @@ caption {
     .nav-links li a {
         display: block;
         padding: 10px 0;
-        border-bottom: 1px solid var(--color-tertiary);
-
-        /* border-bottom: 2px solid transparent; */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         transition: border-color 0.3s ease;
+        color: white;
     }
 
     .nav-links li a:hover,
     .nav-links li a:focus {
-        border-bottom: 2px solid var(--color-tertiary);
+        border-bottom: 2px solid var(--color-accent);
     }
 
     video {
@@ -405,11 +425,9 @@ caption {
     }
 
     .logo {
-        position: initial;
-        width: 30vw;
-        margin-top: 0; /* Remove top margin */
-        margin-left: 20px; /* Add left margin to align with edge */
-        margin-right: 0; /* Remove right margin */
+        position: static; /* Remove absolute positioning to use flexbox */
+        width: 50px; /* Set fixed width for logo */
+        height: auto;
     }
 
     .achievements-row {
